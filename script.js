@@ -35,7 +35,6 @@ class Calculator {
         const prev = parseFloat(this.previousOperand)
         const current = parseFloat(this.currentOperand)
         if (isNaN(prev) || isNaN(current)) return
-        //computation = prev + current
         switch (this.operation) {
             case '+':
                 computation = prev + current
@@ -65,7 +64,7 @@ class Calculator {
         if (isNaN(intDigits)) {
             intDisplay = ''
         } else {
-            intDisplay = intDigits.toLocaleString('en', {
+            intDisplay = intDigits.toLocaleString('es', {
                 maximumFractionDigits: 0
             })
         }
